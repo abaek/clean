@@ -14,79 +14,12 @@ const Header = ({ data }) => (
         </div>
         <div className="left col-md-7 col-lg-8">
           <div className="about-details">
-            <span className="name">My Name is {data.name}.</span>
             <h2 className="sub-position">
-              I'm a Professional {data.designation}.
+              About
             </h2>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: data.description.childMarkdownRemark.html
-              }}
-            />
-            <ul className="details">
-              <li>
-                <strong>Full Name</strong>
-                <p>{data.name}</p>
-              </li>
-              <li>
-                <strong>Age</strong>
-                <p>{data.age} Years</p>
-              </li>
-              <li>
-                <strong>Location</strong>
-                <p>{data.location}</p>
-              </li>
-              <li>
-                <strong>Email</strong>
-                <p>
-                  <a href={`mailto:${data.gmail}`}>{data.gmail}</a>
-                </p>
-              </li>
-            </ul>
-            <div className="socials">
-              <ul>
-                <li>
-                  <a
-                    className="fab fa-facebook-f"
-                    href={data.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    className="fab fa-twitter"
-                    href={data.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    className="fab fa-instagram"
-                    href={data.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    className="fab fa-linkedin-in"
-                    href={data.linkdin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    className="fab fa-github"
-                    href={data.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-              </ul>
-            </div>
+            <span className="name">15+ years of professional cleaning experience in Orleans</span>
+              <span className="name">Imagine the sheer delight of coming home to a sparkling clean house. As the number one house cleaning company in Canada, let MOLLY MAID take care of all your cleaning needs. We’ve been providing superior cleaning services for decades.</span>
+              <span className="name">Imagine the sheer delight of coming home to a sparkling clean house. As the number one house cleaning company in Canada, let MOLLY MAID take care of all your cleaning needs. We’ve been providing superior cleaning services for decades.</span>
           </div>
         </div>
       </div>

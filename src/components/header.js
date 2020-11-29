@@ -16,14 +16,7 @@ export default class Header extends Component {
       <header className={`site-header ${menu ? "active" : ""}`}>
         <div className="container">
           <div className="header-main">
-            <div className="logo">
-              <Link to="/">
-                {data.logo.file.url ? (
-                  <img src={data.logo.file.url} alt="logo" />
-                ) : (
-                  <span>{data.siteName}</span>
-                )}
-              </Link>
+          <div className="logo">
             </div>
             <div
               className="responsive-menu"
