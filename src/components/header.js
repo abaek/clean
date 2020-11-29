@@ -44,9 +44,6 @@ export default class Header extends Component {
                     });
                   }}
                 >
-                  <li>
-                    <Link to="/#home">Home</Link>
-                  </li>
                   {data.menus
                     .filter(item => item === "About")
                     .map(t => {
@@ -61,26 +58,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Service`}>Service</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
-                    .filter(item => item === "Blogs")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Blogs`}>Blogs</Link>
-                        </li>
-                      );
-                    })}
-
-                  {data.menus
-                    .filter(item => item === "Work")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Work`}>Work</Link>
+                          <Link to={`/#Service`}>Services</Link>
                         </li>
                       );
                     })}
@@ -89,16 +67,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Testimonials`}>Testimonials</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
-                    .filter(item => item === "Photos")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Photos`}>Photos</Link>
+                          <Link to={`/#Testimonials`}>Reviews</Link>
                         </li>
                       );
                     })}
